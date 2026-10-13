@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(10, 10, 221);
+            color: white;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <button id="botao" type="button">Clique aqui</button>
+    <script>
+        let botao = document.getElementById('botao');
+
+        botao.addEventListener('click', function () {
+            alert('Minha primeira mensagem');
+            confirm('Está gostando de JS?');
+            prompt('Qual o seu nome?');
+            botao.style.color = 'red';
+            botao.textContent = 'Deu certo';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag003</title>
+</head>
+<body>
+
+    <div style="text-align: center;">
+        <h1>Notícias</h1>
+        <p>Esta é a terceira página do meu site.</p>
+        <h1>Esta é a terceira página</h1>
+        <p>A terceira página está aqui.</p>
+        <p>Para voltar para a primeira página, clique <a href="../index.html" rel="prev">aqui</a>.</p>
+    </div>
+
+    
+
+    //Mapa de imagem
+
+    <img src="../imagens/principal.png" alt="Imagem principal" usemap="#principal" style="border-radius: 10px; display:block;margin: 0 auto;">
+    <map name="principal">
+        <area shape="rect" coords="370,3,694,238" href="../imagens/computador.png" alt="Link para computador">
+        <area shape="rect" coords="228,148,502,362" href="../imagens/celular.jpg" alt="Link para o celular">
+        <area shape="rect" coords="88,290,153,464" href="../imagens/oculos.jpeg" alt="link para o óculos">
+    </map>
+
+    <style>
+        body {
+            position: relative;
+            min-height: 100vh;
+            }
+
+            body::before {
+            content: "";
+            position: fixed;
+            inset: 0; /* mesma coisa que top:0; right:0; bottom:0; left:0 */
+            background-image: url('../imagens/paisagem_clara.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5; /* deixa a imagem com 30% de opacidade */
+            z-index: -1;
+            }
+    </style>
+</body>
+</html>
